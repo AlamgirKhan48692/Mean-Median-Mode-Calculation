@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mean Calculator</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Mean Calculator 🚀</h1>
+
+        <form method="POST">
+
+            <input type="text"
+                   name="numbers"
+                   placeholder="Enter numbers separated with comma">
+
+            <br>
+
+            <button type="submit">Calculate Mean</button>
+
+        </form>
+
+        {% if mean %}
+
+          <h2>
+              Mean = {{ "%.2f" % mean }}
+          </h2>
+
+          <h2>
+              Mode = {{ mode }}
+          </h2>
+
+          <h2>
+              Median = {{ "%.2f" % median }}
+          </h2>
+
+          <img src="{{ url_for('static', filename='graph.png') }}" alt="Statistics Graph">
+
+        {% endif %}
+
+    </div>
+
+</body>
+</html>
