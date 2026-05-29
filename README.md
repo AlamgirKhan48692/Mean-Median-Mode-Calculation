@@ -1,5 +1,10 @@
 # Mean Median Mode Calculator
 
+## Live Demo
+
+https://alamgirkhan48692.pythonanywhere.com/
+
+
 A Flask-based web application that calculates **Mean**, **Median**, and **Mode** from user input and displays a statistical graph using Matplotlib.
 
 ## Features
@@ -48,7 +53,7 @@ Mean-Median-Mode-Calculation/
 ### Clone Repository
 
 ```bash
-git clone (https://alamgirkhan48692.pythonanywhere.com/)
+git clone https://github.com/AlamgirKhan48692/Mean-Median-Mode-Calculation.git
 ```
 
 ### Go to Project Directory
