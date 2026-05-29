@@ -3,6 +3,7 @@ from collections import Counter
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+import os
 
 app = Flask(__name__)
 
@@ -95,7 +96,9 @@ def home():
 
         plt.ylabel("Values")
 
-        plt.savefig("static/graph.png")
+
+        graph_path = os.path.join(app.root_path, "static", "graph.png")
+        plt.savefig(graph_path)
 
         plt.close()
 
