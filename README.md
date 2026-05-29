@@ -48,7 +48,7 @@ Mean-Median-Mode-Calculation/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/Mean-Median-Mode-Calculation.git
+git clone (https://alamgirkhan48692.pythonanywhere.com/)
 ```
 
 ### Go to Project Directory
